@@ -1,0 +1,771 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg-dark {
+    background-color: #000000 !important;
+}
+
+.navbar {
+    border: 5px solid transparent;
+    /* Remove border if not needed */
+    border-image: linear-gradient(to right, Black);
+    /* Gradient background */
+    border-image-slice: 1;
+    padding-bottom: 30px;
+    /* Space below the navbar */
+    background: linear-gradient(to right, Black);
+    /* Gradient background */
+}
+
+/* Style for the logo */
+.vr-logo {
+    width: 200px;
+    /* Increase the size of the logo */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Center-align the nav items */
+.navbar-nav {
+    justify-content: center;
+    /* Center items horizontally */
+    flex-grow: 1;
+    /* Ensure it takes up remaining space */
+}
+
+/* Increase font size and remove glow effect for nav items */
+.nav-link {
+    font-size: 1.25rem;
+    /* Increase font size */
+    color: #fff;
+    /* White text color */
+}
+
+/* Optional: Style for active nav item */
+.nav-link.active {
+    color: #0ff;
+    /* Change color for active state */
+}
+
+#navItem1 {
+    color: white;
+    font-family: "Roboto";
+}
+
+#navItem2 {
+    color: white;
+    font-family: "Roboto";
+}
+
+#navItem3 {
+    color: white;
+    font-family: "Roboto";
+}
+
+#navItem4 {
+    color: white;
+    font-family: "Roboto";
+}
+
+.banner-section-bg-container {
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/vr-banner-bg.png");
+    height: 100vh;
+    background-size: cover;
+}
+
+.banner-heading {
+    color: white;
+    font-family: "Roboto";
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.vr-features-section-heading {
+    color: #00f9ff;
+    /* Neon blue shade */
+    font-family: 'Roboto', sans-serif;
+    /* Font family */
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow:
+        0 0 2px #00f9ff,
+        0 0 5px #00f9ff,
+        0 0 10px #00f9ff,
+        0 0 15px #00f9ff;
+    /* Adjusted neon glow effect */
+}
+
+.glowing-card {
+    background-color: #000;
+    /* Black background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00f9ff, 0 0 20px #00f9ff, 0 0 30px #00f9ff;
+    /* Neon blue glow effect */
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    /* Modern font */
+    color: #fff;
+    /* White text color for contrast */
+}
+
+/* Card Image */
+.vr-features-card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #00f9ff;
+    /* Neon glow around image */
+}
+
+/* Card Title */
+.vr-features-card-title {
+    color: #00f9ff;
+    /* Neon blue shade for the title */
+    font-size: 28px;
+    /* Adjust size as needed */
+    font-weight: bold;
+    text-shadow: 0 0 3px #00f9ff, 0 0 5px #00f9ff, 0 0 7px #00f9ff;
+    /* Glow effect for the title */
+}
+
+/* Card Description */
+.vr-features-card-description {
+    font-size: 16px;
+    /* Adjust size as needed */
+    line-height: 1.5;
+    color: #ddd;
+    /* Slightly lighter text color for description */
+}
+
+.vr-features-card-image {
+    width: 64px;
+    height: 64px;
+}
+
+.vr-features-card-title {
+    color: #1f2933;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.vr-features-card-description {
+    color: #7b8794;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.interaction {
+    color: #1f2933;
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* Section background color */
+.wcu-section {
+    background-color: #000;
+    /* Black background for the section */
+    color: #fff;
+    /* White text color for the section */
+    padding-top: 3rem;
+    /* Adjust as needed */
+    padding-bottom: 3rem;
+    /* Adjust as needed */
+}
+
+/* Card container styles */
+.wcu-card {
+    background-color: #000;
+    /* Black background for cards */
+    color: #fff;
+    /* White text color in cards */
+    border-radius: 10px;
+    /* Rounded corners for a modern look */
+    position: relative;
+    /* For absolute positioning of cutouts */
+    overflow: hidden;
+    /* To ensure cutouts do not overflow */
+    padding: 20px;
+    /* Add padding inside the card */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    /* Neon blue glow effect */
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effects */
+}
+
+/* Unique gaming cutouts */
+.wcu-card:before,
+.wcu-card:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    /* Black background for the cutouts */
+}
+
+.wcu-card:before {
+    top: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.wcu-card:after {
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(100% 100%, 0 100%, 100% 0);
+}
+
+/* Card image styles */
+.wcu-card-image {
+    width: 80%;
+    /* Smaller image size */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 10px;
+    /* Rounded corners for image */
+    display: block;
+    /* Ensures image is centered in its container */
+    margin: 0 auto;
+    /* Centers the image horizontally */
+}
+
+/* Card title styles */
+.wcu-card-title {
+    font-size: 1.6rem;
+    /* Adjust as needed */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    /* Fun, unique font style */
+    margin-top: 15px;
+    /* Space above title */
+}
+
+/* Card description styles */
+.wcu-card-description {
+    font-size: 1.1rem;
+    /* Adjust as needed */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    /* Consistent font style */
+}
+
+/* Keyframes for sliding animation */
+@keyframes carousel-slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Carousel container */
+.carousel-logos {
+    overflow: hidden;
+    padding: 60px 0;
+    background: #bebebe;
+    white-space: nowrap;
+    position: relative;
+}
+
+/* Gradient overlay for edges */
+.carousel-logos:before,
+.carousel-logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.carousel-logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.carousel-logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+/* Pause animation on hover */
+.carousel-logos:hover .carousel-logos-slide {
+    animation-play-state: paused;
+}
+
+/* Sliding container */
+.carousel-logos-slide {
+    display: inline-block;
+    animation: 35s carousel-slide infinite linear;
+}
+
+/* Style for images */
+.carousel-logos-slide img {
+    height: 50px;
+    margin: 0 20px;
+    /* Adjusted margin for better responsiveness */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel-logos-slide img {
+        height: 40px;
+        /* Smaller height on smaller screens */
+        margin: 0 10px;
+        /* Adjusted margin for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-logos-slide img {
+        height: 30px;
+        /* Further reduction in height */
+        margin: 0 5px;
+        /* Further reduction in margin */
+    }
+}
+
+.custom-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #000;
+    /* Black background */
+}
+
+.custom-card {
+    background-color: #000;
+    border: 1px solid #338CFF;
+    /* Neon blue border */
+    border-radius: 10px;
+    box-shadow: 0 0 20px #338CFF;
+    /* Neon blue glow effect */
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #338CFF;
+    /* Stronger glow on hover */
+}
+
+.custom-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.custom-card-title {
+    color: #338CFF;
+    /* Neon blue text */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.custom-card-text {
+    color: #ffffff;
+    /* White text */
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .custom-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .custom-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Neon button above carousel */
+:root {
+    --clr-neon: #14f7ff;
+    --clr-bg: #001414;
+    --font-size-large: 2rem;
+    --font-size-medium: 1.5rem;
+    --font-size-small: 1rem;
+}
+
+.xr-neon-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--clr-bg);
+}
+
+.xr-neon-button {
+    font-size: var(--font-size-large);
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    border: var(--clr-neon) 0.125em solid;
+    padding: 0.25em 1em;
+    border-radius: 0.25em;
+    text-shadow:
+        0 0 0.20em #FFF7,
+        0 0 0.30em var(--clr-neon);
+    box-shadow:
+        inset 0 0 0.5em var(--clr-neon),
+        0 0 0.5em var(--clr-neon);
+    margin-bottom: 1rem;
+}
+
+.xr-neon-button::before {
+    content: "";
+    position: absolute;
+    top: 140%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--clr-neon);
+    transform:
+        perspective(0.2em) rotateX(10deg) scale(1.3, 0.40);
+    filter: blur(0.5em);
+    opacity: 0.6;
+    pointer-events: none;
+    transition: opacity 100ms linear;
+}
+
+.xr-neon-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--clr-neon);
+    box-shadow: 0 0 2em var(--clr-neon);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 100ms linear;
+}
+
+.xr-neon-button:hover::after {
+    opacity: 1;
+}
+
+.xr-neon-button:hover,
+.xr-neon-button:focus {
+    color: white;
+}
+
+.xr-neon-button:hover::before {
+    opacity: 0.8;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .xr-neon-button {
+        font-size: var(--font-size-medium);
+        padding: 0.2em 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .xr-neon-button {
+        font-size: var(--font-size-small);
+        padding: 0.15em 0.5em;
+    }
+}
+
+.footer {
+    background-color: #010407;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.footer-column {
+    flex: 1 1 250px;
+    margin: 20px;
+    min-width: 200px;
+}
+
+.footer-column h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #338CFF;
+    display: inline-block;
+}
+
+.footer-column p,
+.footer-column ul,
+.footer-column form {
+    margin: 10px 0;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 15px;
+}
+
+.custom-social-btns .custom-btn {
+    display: inline-block;
+    background-color: white;
+    width: 60px;
+    /* Adjusted for responsiveness */
+    height: 60px;
+    /* Adjusted for responsiveness */
+    line-height: 60px;
+    margin: 5px;
+    /* Adjusted for responsiveness */
+    position: relative;
+    overflow: hidden;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000022;
+    cursor: pointer;
+}
+
+.custom-social-btns .custom-btn ion-icon {
+    font-size: 28px;
+    /* Adjusted for responsiveness */
+    vertical-align: middle;
+    color: var(--custom-color);
+}
+
+.custom-social-btns {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.custom-social-btns .custom-btn:before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background-color: var(--custom-color);
+    transform: rotate(45deg);
+    top: 90%;
+    left: -110%;
+    transition: all 0.35s;
+    transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+
+.custom-social-btns .custom-btn:focus:before,
+.custom-social-btns .custom-btn:hover:before {
+    top: -10%;
+    left: -10%;
+}
+
+.custom-social-btns .custom-btn:hover ion-icon {
+    color: #fff;
+    transform: scale(1.3);
+}
+
+
+.footer-column form {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.footer-column input[type="email"] {
+    padding: 10px;
+    flex: 1;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.footer-column button {
+    padding: 10px;
+    background-color: #338CFF;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.footer-column button:hover {
+    background-color: #14f7ff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+    color: #ccc;
+    font-size: 1rem;
+}
+
+.span-footer-element {
+    font-weight: 700;
+}
+
+/* Button Container (if needed for positioning) */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Button */
+.unique-btn {
+    margin: 0;
+    padding: 10px 30px;
+    /* Reduced padding for smaller button size */
+    border: none;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    background-color: #333;
+    /* Set default background color */
+    font-size: 16px;
+    /* Adjust font size for responsiveness */
+}
+
+/* Button Shadow */
+.unique-btn::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+/* Glow Effect */
+.unique-btn::before {
+    content: "";
+    background: linear-gradient(45deg,
+            #FF0000, #FF7300, #FFFB00, #48FF00,
+            #00FFD5, #002BFF, #FF00C8, #FF0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+/* Glow Animation */
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* Hover Effect */
+.unique-btn:hover::before {
+    opacity: 1;
+}
+
+/* Active State */
+.unique-btn:active::after {
+    background: transparent;
+}
+
+.unique-btn:active {
+    color: #000;
+    font-weight: bold;
+}
+
+
+.custom-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: #000;
+}
+
+.content-wrapper {
+    margin-top: 80px;
+    /* Adjust based on the navbar height */
+}
+
+.animated-logo {
+    height: 60px;
+    /* Adjusted logo height for better alignment */
+    transition: transform 0.5s ease-in-out;
+    border: none;
+}
+
+.animated-logo:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+@media (max-width: 576px) {
+    .content-wrapper {
+        margin-top: 60px;
+        /* Adjust margin-top for extra small devices */
+    }
+
+    .animated-logo {
+        height: 45px;
+        /* Smaller logo for extra small devices */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px;
+        /* Adjust font size for better fit on small screens */
+    }
+
+    .navbar-brand {
+        padding-left: 0;
+        /* Ensure logo aligns with nav items on small screens */
+    }
+}
